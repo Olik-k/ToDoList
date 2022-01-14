@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #f0d2ed;
+  font-family: 'Caveat', cursive;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+ 
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.add-todo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  min-height: 40px;
+  align-items: center;
+  background-color: #c5a9c3;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.todos-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -25px;
+}
+
+.todos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+.input-wrapper {
+  width: 75%;
+}
+
+.input-wrapper input {
+  width: 95%;
+  outline: none;
+  font-size: 20px;
+  color: #3d3c3c;
+  border-radius: 6px;
+  border: 2px solid #ce7eba;
+  height: 33px;
+}
+
+.button-wrapper {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.button-wrapper button {
+  width: 95%;
+  background-color: #bff0f3;
+  color: #3d3c3c;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  border-radius: 6px;
+  border: 2px solid #7aa1a1;
+  height: 39px;
+  cursor: pointer;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  min-height: 40px;
+  align-items: center;
+  background-color: #c5a9c3;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.todo-item.checked {
+  background-color: rgb(130, 196, 201);
+  opacity: 0.4;
+}
+
+.todo-item.delition {
+  animation: opacity 1s ease-in-out;
+}
+
+.description {
+  width: 72%;
+  outline: none;
+  background-color: #ffffff;
+  font-size: 25px;
+  color: #3d3c3c;
+  border-radius: 6px;
+  border: 2px solid #ce7eba;
+  height: 33px;
+}
+
+.buttons1 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end
+  
+}
+
+.buttons input {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.buttons1 button {
+  width: 95%;
+  background-color: #f5aebf;
+  color: #3d3c3c;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  border-radius: 6px;
+  border: 2px solid #db5e7e;
+  height: 39px;
+  cursor: pointer;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
